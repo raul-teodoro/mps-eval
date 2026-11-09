@@ -1,0 +1,399 @@
+{
+  "model": {
+    "id": "MPS-SW-2024-G",
+    "name": "MPS.BR — Guia Geral MPS de Software:2024",
+    "level": "G",
+    "level_name": "Parcialmente Gerenciado",
+    "version": "2024.2",
+    "source": "SOFTEX. MPS.BR – Guia Geral MPS de Software:2024, seções 8.1.1, 9.1.1 e 9.1.2; MPS – Guia de Avaliação:2024, Parte I (Tabela 7 e Relatório de Ajustes para a Avaliação Final).",
+    "scope_note": "Escopo da ferramenta: processos GPR e REQ do Nível G e a capacidade dos processos de projeto (CP-Proj). O processo Capacitação (CAP), também exigido no Nível G, está fora do escopo desta versão."
+  },
+  "level_requirements": {
+    "processes": [
+      {
+        "code": "GPR",
+        "name": "Gerência de Projetos"
+      },
+      {
+        "code": "REQ",
+        "name": "Engenharia de Requisitos"
+      },
+      {
+        "code": "CAP",
+        "name": "Capacitação"
+      }
+    ],
+    "capability": "CP-G",
+    "source": "SOFTEX. Guia Geral MPS de Software:2024, Tabela 2 (Resumo dos Níveis, Processos e Capacidade de Processo)."
+  },
+  "scale": [
+    {
+      "code": "T",
+      "label": "Totalmente implementado",
+      "short": "Totalmente",
+      "tone": "ok",
+      "satisfies": true,
+      "finding": null
+    },
+    {
+      "code": "L",
+      "label": "Largamente implementado",
+      "short": "Largamente",
+      "tone": "ok",
+      "satisfies": true,
+      "finding": "melhoria"
+    },
+    {
+      "code": "P",
+      "label": "Parcialmente implementado",
+      "short": "Parcialmente",
+      "tone": "warn",
+      "satisfies": false,
+      "finding": "requerido"
+    },
+    {
+      "code": "N",
+      "label": "Não implementado",
+      "short": "Não implementado",
+      "tone": "bad",
+      "satisfies": false,
+      "finding": "requerido"
+    }
+  ],
+  "capability": {
+    "code": "CP-G",
+    "name": "Capacidade do Processo Nível G",
+    "subtitle": "A execução do processo é gerenciada",
+    "items": [
+      {
+        "key": "i",
+        "title": "Resultados produzidos",
+        "text": "O processo produz os resultados definidos.",
+        "hint": "Verifique se os resultados esperados de GPR e REQ avaliados acima são de fato produzidos no projeto (consolidação dos itens dos dois processos)."
+      },
+      {
+        "key": "ii",
+        "title": "Execução planejada e monitorada",
+        "text": "A execução do processo é planejada e monitorada.",
+        "hint": "Planejamento das atividades do próprio processo (quem, quando, como) e registros de acompanhamento dessa execução."
+      },
+      {
+        "key": "iii",
+        "title": "Pessoas preparadas",
+        "text": "As pessoas estão preparadas para executar suas responsabilidades no processo.",
+        "hint": "Responsabilidades atribuídas e registros de capacitação ou de experiência das pessoas que executam o processo."
+      }
+    ],
+    "block": {
+      "code": "CP-Proj",
+      "name": "Capacidade de Processos de Projetos",
+      "purpose": "Os processos de projeto (GPR e REQ) são tratados como um único processo para a capacidade CP-G, avaliada uma vez para o projeto (Guia Geral 2024, Figura 3; Guia de Avaliação 2024, Parte I, p. 56)."
+    }
+  },
+  "processes": [
+    {
+      "code": "GPR",
+      "name": "Gerência de Projetos",
+      "purpose": "Estabelecer e manter atualizados planos que definam as atividades, recursos, riscos, prazos e responsabilidades do projeto, e prover informações sobre o andamento que permitam correções quando houver desvios significativos, incluindo análise de causas.",
+      "groups": [
+        {
+          "name": "Planejamento",
+          "results": [
+            "GPR 1",
+            "GPR 2",
+            "GPR 3",
+            "GPR 4",
+            "GPR 5",
+            "GPR 6",
+            "GPR 7",
+            "GPR 8",
+            "GPR 9",
+            "GPR 10",
+            "GPR 11",
+            "GPR 12",
+            "GPR 13"
+          ]
+        },
+        {
+          "name": "Monitoramento e controle",
+          "results": [
+            "GPR 14",
+            "GPR 15",
+            "GPR 16",
+            "GPR 17",
+            "GPR 18",
+            "GPR 19"
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "GPR 1",
+          "title": "Escopo do trabalho",
+          "text": "O escopo do trabalho para o projeto é estabelecido, mantido atualizado e utilizado.",
+          "notes": [],
+          "hint": "Documento de escopo ou EAP aprovado, histórico de atualizações e indícios de uso no planejamento (ex.: backlog ou tarefas derivadas do escopo)."
+        },
+        {
+          "id": "GPR 2",
+          "title": "Processo do projeto",
+          "text": "O processo a ser utilizado para a execução do projeto é descrito, mantido atualizado e utilizado.",
+          "notes": [
+            {
+              "kind": "requerido",
+              "text": "Nos níveis G e F a descrição do processo para o projeto deve conter, pelo menos, o ciclo de vida do projeto e a lista de tarefas que serão executadas."
+            }
+          ],
+          "hint": "Descrição do processo do projeto contendo ciclo de vida e lista de tarefas, e registros de que as tarefas foram executadas conforme descrito."
+        },
+        {
+          "id": "GPR 3",
+          "title": "Estimativas de dimensão",
+          "text": "Estimativas de dimensão da solução são estabelecidas e mantidas atualizadas.",
+          "notes": [
+            {
+              "kind": "requerido",
+              "text": "HH (Homem Hora) é medida de esforço e não pode ser considerada como dimensão."
+            }
+          ],
+          "hint": "Estimativas de tamanho registradas (pontos de função, story points ou método da empresa) e suas revisões."
+        },
+        {
+          "id": "GPR 4",
+          "title": "Esforço, duração e custo",
+          "text": "Estimativas de esforço, duração e custo para a execução das tarefas e dos produtos de trabalho do projeto são estabelecidas e justificadas.",
+          "notes": [
+            {
+              "kind": "requerido",
+              "text": "As estimativas de esforço, duração e custo devem ser derivadas das estimativas de dimensão de tarefas e produtos de trabalho. A justificativa das estimativas deve conter um racional de como foram realizadas."
+            }
+          ],
+          "hint": "Planilha ou registro de estimativas derivadas da dimensão, com o racional utilizado."
+        },
+        {
+          "id": "GPR 5",
+          "title": "Orçamento e cronograma",
+          "text": "O orçamento e o cronograma do projeto, incluindo a definição de marcos, são estabelecidos e mantidos atualizados.",
+          "notes": [],
+          "hint": "Cronograma com marcos definidos, orçamento do projeto e versões atualizadas de ambos."
+        },
+        {
+          "id": "GPR 6",
+          "title": "Recursos humanos",
+          "text": "Os recursos humanos para o projeto são planejados considerando as habilidades e os conhecimentos necessários para executá-lo.",
+          "notes": [
+            {
+              "kind": "informativo",
+              "text": "Caso não existam na organização recursos humanos com as habilidades e conhecimentos necessários, estes podem ser contratados ou serem realizados treinamentos para superar as deficiências."
+            }
+          ],
+          "hint": "Planejamento de equipe com perfis e habilidades necessárias, alocação e ações para lacunas (treinamento ou contratação)."
+        },
+        {
+          "id": "GPR 7",
+          "title": "Recursos materiais e ambiente",
+          "text": "Os recursos materiais e o ambiente de trabalho necessários para executar o projeto são estabelecidos e mantidos atualizados.",
+          "notes": [],
+          "hint": "Lista de recursos materiais, ferramentas e ambiente (hardware, software, licenças) e suas atualizações."
+        },
+        {
+          "id": "GPR 8",
+          "title": "Estratégia de transição",
+          "text": "A estratégia de transição para operação e suporte do produto, incluindo as tarefas e o cronograma, é planejada.",
+          "notes": [],
+          "hint": "Plano de transição para operação e suporte com tarefas e cronograma (implantação, treinamento de usuários, repasse)."
+        },
+        {
+          "id": "GPR 9",
+          "title": "Envolvimento das partes interessadas",
+          "text": "O envolvimento das partes interessadas no projeto é planejado.",
+          "notes": [],
+          "hint": "Plano de partes interessadas ou de comunicação: quem participa, quando e de que forma."
+        },
+        {
+          "id": "GPR 10",
+          "title": "Riscos e oportunidades",
+          "text": "Os riscos ou oportunidades do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são determinados e documentados.",
+          "notes": [
+            {
+              "kind": "informativo",
+              "text": "Riscos são incertezas que podem ter impacto negativo no projeto. Oportunidades são incertezas que podem ter impacto positivo no projeto."
+            },
+            {
+              "kind": "requerido",
+              "text": "O registro de riscos é obrigatório."
+            }
+          ],
+          "hint": "Registro de riscos e oportunidades com impacto, probabilidade e prioridade de tratamento."
+        },
+        {
+          "id": "GPR 11",
+          "title": "Viabilidade do projeto",
+          "text": "A viabilidade do projeto é avaliada considerando as estimativas realizadas, restrições, capacidade e disponibilidade dos recursos. Se necessário, ajustes são realizados.",
+          "notes": [],
+          "hint": "Registro da análise de viabilidade (estimativas × restrições × recursos) e dos ajustes decorrentes."
+        },
+        {
+          "id": "GPR 12",
+          "title": "Plano geral do projeto",
+          "text": "Um plano geral para a execução do projeto é estabelecido com a integração consistente dos planejamentos realizados, e é mantido atualizado.",
+          "notes": [],
+          "hint": "Plano do projeto integrando escopo, estimativas, cronograma, recursos, riscos e partes interessadas, com versões atualizadas."
+        },
+        {
+          "id": "GPR 13",
+          "title": "Revisão e compromisso com o plano",
+          "text": "O Plano do Projeto é revisado com todos os interessados e o compromisso com ele é obtido.",
+          "notes": [],
+          "hint": "Ata ou registro de revisão do plano com os interessados e evidência de compromisso (aprovação formal, aceite por e-mail)."
+        },
+        {
+          "id": "GPR 14",
+          "title": "Monitoramento do planejado",
+          "text": "O escopo, as tarefas, as estimativas, o orçamento, o cronograma, os recursos materiais e humanos e o ambiente de trabalho são monitorados em relação ao planejado.",
+          "notes": [],
+          "hint": "Relatórios de acompanhamento comparando realizado × planejado em escopo, esforço, custo, prazo e recursos."
+        },
+        {
+          "id": "GPR 15",
+          "title": "Monitoramento das partes interessadas",
+          "text": "O envolvimento das partes interessadas no projeto é monitorado e tratado em relação ao planejado.",
+          "notes": [],
+          "hint": "Registros de acompanhamento do envolvimento das partes interessadas e do tratamento de desvios."
+        },
+        {
+          "id": "GPR 16",
+          "title": "Monitoramento da transição",
+          "text": "A transição para a etapa de operação e suporte do produto é monitorada em relação ao planejado.",
+          "notes": [],
+          "hint": "Registros de acompanhamento da transição em relação ao plano de transição."
+        },
+        {
+          "id": "GPR 17",
+          "title": "Monitoramento de riscos",
+          "text": "Os riscos ou oportunidades do projeto são monitorados e seus resultados são comunicados às partes interessadas.",
+          "notes": [],
+          "hint": "Revisões periódicas do registro de riscos e evidência de comunicação (atas, relatórios de status)."
+        },
+        {
+          "id": "GPR 18",
+          "title": "Ações corretivas",
+          "text": "Ações para corrigir desvios em relação ao planejado são identificadas, implementadas e acompanhadas até a sua conclusão.",
+          "notes": [],
+          "hint": "Registro de ações corretivas com responsável, prazo e acompanhamento até o fechamento."
+        },
+        {
+          "id": "GPR 19",
+          "title": "Análise de resultados e causas",
+          "text": "Resultados positivos ou negativos significativos do projeto são analisados e as causas do desvio são tratadas.",
+          "notes": [
+            {
+              "kind": "informativo",
+              "text": "A análise de causa pode tratar de um ou vários projetos."
+            }
+          ],
+          "hint": "Análise de resultados significativos e de causas de desvios (lições aprendidas, análise de causa) e o tratamento dado."
+        }
+      ]
+    },
+    {
+      "code": "REQ",
+      "name": "Engenharia de Requisitos",
+      "purpose": "Definir, gerenciar e manter atualizados os requisitos das partes interessadas e do produto, garantindo que inconsistências entre os requisitos, os planos e os produtos de trabalho sejam identificadas e tratadas.",
+      "groups": [
+        {
+          "name": "Requisitos",
+          "results": [
+            "REQ 1",
+            "REQ 2",
+            "REQ 3",
+            "REQ 4",
+            "REQ 5"
+          ]
+        }
+      ],
+      "results": [
+        {
+          "id": "REQ 1",
+          "title": "Necessidades das partes interessadas",
+          "text": "As necessidades, expectativas e restrições das partes interessadas, tanto em relação ao produto quanto a suas interfaces, são identificadas e o entendimento dos requisitos é confirmado.",
+          "notes": [
+            {
+              "kind": "requerido",
+              "text": "Devem ser utilizados critérios para a definição e envolvimento das partes interessadas."
+            },
+            {
+              "kind": "requerido",
+              "text": "Devem ser utilizados critérios para a avaliação e aprovação do entendimento dos requisitos."
+            },
+            {
+              "kind": "informativo",
+              "text": "Parte interessada pode envolver cliente, gestores do produto, usuários interessados no produto, entre outros."
+            }
+          ],
+          "hint": "Registro das necessidades e restrições levantadas, critérios para definir partes interessadas e registro de confirmação do entendimento (aprovação)."
+        },
+        {
+          "id": "REQ 2",
+          "title": "Especificação e priorização",
+          "text": "Os requisitos são especificados, priorizados e mantidos atualizados a partir das necessidades, expectativas e restrições identificadas para o produto e suas interfaces.",
+          "notes": [],
+          "hint": "Especificação de requisitos priorizada e versionada, ligada às necessidades levantadas."
+        },
+        {
+          "id": "REQ 3",
+          "title": "Compromisso da equipe técnica",
+          "text": "O compromisso da equipe técnica com a implementação dos requisitos é obtido.",
+          "notes": [],
+          "hint": "Registro de compromisso da equipe técnica (ata de reunião, aceite formal)."
+        },
+        {
+          "id": "REQ 4",
+          "title": "Rastreabilidade bidirecional",
+          "text": "A rastreabilidade bidirecional entre requisitos, atividades ou produtos de trabalho do projeto é estabelecida e mantida.",
+          "notes": [],
+          "hint": "Matriz de rastreabilidade requisitos ↔ atividades/produtos de trabalho, mantida atualizada nos dois sentidos."
+        },
+        {
+          "id": "REQ 5",
+          "title": "Revisão de inconsistências",
+          "text": "Os planos, atividades e produtos de trabalho relacionados são revisados visando identificar e tratar inconsistência em relação aos requisitos.",
+          "notes": [],
+          "hint": "Registros de revisão de planos e produtos frente aos requisitos e do tratamento das inconsistências encontradas."
+        }
+      ]
+    }
+  ],
+  "final_scale_extra": [
+    {
+      "code": "NA",
+      "label": "Não avaliado",
+      "short": "Não avaliado",
+      "tone": "pending",
+      "satisfies": false,
+      "finding": null,
+      "neutral": true
+    }
+  ],
+  "findings": {
+    "requerido": {
+      "label": "REQUERIDO",
+      "description": "Problema",
+      "suggestion": "Sugestão de correção"
+    },
+    "melhoria": {
+      "label": "MELHORIA",
+      "description": "Oportunidade de melhoria"
+    },
+    "impact": [
+      "-",
+      "LEVE"
+    ],
+    "correction": [
+      "Sim",
+      "Não",
+      "Sem Correção"
+    ],
+    "source": "MPS – Guia de Avaliação:2024, Parte I, p. 43: ajustes requeridos devem ser realizados; oportunidades de melhoria podem ou não ser realizadas."
+  }
+}
